@@ -59,8 +59,7 @@ export default function Home() {
                 Platform
               </h2>
               <p className="text-[14px] leading-[20px] text-[#1a2b3b] font-normal">
-                Full access to our platform, including all questions and
-                solutions.
+                Full access to our working space, including everything about the Team G.E.R.
               </p>
             </div>
             <div className="w-1/2">
@@ -68,8 +67,7 @@ export default function Home() {
                 Community
               </h2>
               <p className="text-[14px] leading-[20px] text-[#1a2b3b] font-normal">
-                Join a community of like-minded individuals, and learn from each
-                other.
+                Take a look at our team of open-minded individuals, and enjoy playing.
               </p>
             </div>
           </motion.div>
@@ -85,7 +83,7 @@ export default function Home() {
               }}
             >
               <Link
-                href="https://github.com/Tameyer41/liftoff"
+                href="https://team-ger.itch.io"
                 target="_blank"
                 className="group rounded-full pl-[8px] min-w-[180px] pr-4 py-2 text-[13px] font-semibold transition-all flex items-center justify-center bg-[#1E2B3A] text-white hover:[linear-gradient(0deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)), #0D2247] no-underline flex gap-x-2  active:scale-95 scale-100 duration-75"
                 style={{
@@ -115,7 +113,7 @@ export default function Home() {
                     ></path>
                   </svg>
                 </span>
-                Star on Github
+                Link to Itch
               </Link>
             </motion.div>
             <motion.div
