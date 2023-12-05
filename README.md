@@ -1,3 +1,4 @@
+![image](https://github.com/Romazyng/TEAM_GER/assets/106024567/690c7404-1a80-4747-96e3-67da2567a889)
 # TEAM GER 
 ## (Web development team)
 
