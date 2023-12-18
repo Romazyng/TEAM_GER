@@ -11,21 +11,13 @@ export default function Home() {
   }, []);
 
   return (
-    <AnimatePresence>
-      <div className="min-h-[100vh] sm:min-h-screen w-screen flex flex-col relative bg-[#F2F3F5] font-inter overflow-hidden">
+    
+     <div className="min-h-[100vh] sm:min-h-screen w-screen flex flex-col relative bg-[#000000] font-inter overflow-hidden">
         <svg
           style={{ filter: "contrast(125%) brightness(110%)" }}
           className="fixed z-[1] w-full h-full opacity-[35%]"
         >
-          <filter id="noise">
-            <feTurbulence
-              type="fractalNoise"
-              baseFrequency=".7"
-              numOctaves="3"
-              stitchTiles="stitch"
-            ></feTurbulence>
-            <feColorMatrix type="saturate" values="0"></feColorMatrix>
-          </filter>
+          
           <rect width="100%" height="100%" filter="url(#noise)"></rect>
         </svg>
         <main className="flex flex-col justify-center h-[90%] static md:fixed w-screen overflow-hidden grid-rows-[1fr_repeat(3,auto)_1fr] z-[100] pt-[30px] pb-[320px] px-4 md:px-20 md:py-0">
@@ -38,11 +30,11 @@ export default function Home() {
               duration: 0.95,
               ease: [0.165, 0.84, 0.44, 1],
             }}
-            className="relative md:ml-[-10px] md:mb-[37px] font-extrabold text-[16vw] md:text-[130px] font-inter text-[#1E2B3A] leading-[0.9] tracking-[-2px] z-[100]"
+            className="relative md:ml-[-10px] md:mb-[37px] font-extrabold text-[16vw] md:text-[130px] font-inter text-[#eeea08] leading-[0.9] tracking-[-2px] z-[100]"
           >
             Introducing <br />
-            the <span className="text-[#e24a4a]">Team GER</span>
-            <span className="font-inter text-[#407BBF]">.</span>
+            the <span className="text-[#e24aa3]">Team GER</span>
+            <span className="font-inter text-[#eeea08]">.</span>
           </motion.h1>
           <motion.div
             initial={{ opacity: 0, y: 40 }}
@@ -55,18 +47,18 @@ export default function Home() {
             className="flex flex-row justify-center z-20 mx-0 mb-0 mt-8 md:mt-0 md:mb-[35px] max-w-2xl md:space-x-8"
           >
             <div className="w-1/2">
-              <h2 className="flex items-center font-semibold text-[1em] text-[#1a2b3b]">
+              <h2 className="flex items-center font-semibold text-[1em] text-[#e24aa3]">
                 Platform
               </h2>
-              <p className="text-[14px] leading-[20px] text-[#1a2b3b] font-normal">
+              <p className="text-[14px] leading-[20px] text-[#e24aa3] font-normal">
                 Full access to our working space, including everything about the Team G.E.R.
               </p>
             </div>
             <div className="w-1/2">
-              <h2 className="flex items-center font-semibold text-[1em] text-[#1a2b3b]">
+              <h2 className="flex items-center font-semibold text-[1em] text-[#eeea08]">
                 Community
               </h2>
-              <p className="text-[14px] leading-[20px] text-[#1a2b3b] font-normal">
+              <p className="text-[14px] leading-[20px] text-[#eeea08] font-normal">
                 Take a look at our team of open-minded individuals, and enjoy playing.
               </p>
             </div>
@@ -187,6 +179,5 @@ export default function Home() {
           className="z-50 fixed top-0 right-[-2px] w-[80%] md:w-1/2 h-screen bg-[#c3e4ff]"
         ></motion.canvas>
       </div>
-    </AnimatePresence>
   );
 }
