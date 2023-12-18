@@ -629,8 +629,8 @@ class Gradient {
       this.canvas.width,
       this.canvas.height
     );
-    gradient.addColorStop(0, "#ffba27");
-    gradient.addColorStop(1, "#7038ff");
+    gradient.addColorStop(0, "#534b4f");
+    gradient.addColorStop(1, "#131313");
 
     this.ctx.fillStyle = gradient;
     this.ctx.fillRect(0, 0, this.canvas.width, this.canvas.height);
@@ -850,7 +850,7 @@ class Gradient {
         ((this.cssVarRetries += 1), this.cssVarRetries > this.maxCssVarRetries)
       ) {
         return (
-          (this.sectionColors = [16711680, 16711680, 16711935, 65280, 255]),
+          (this.sectionColors = [0, 0, 16711935, 16711935, 192]),
           void this.init()
         );
       }
