@@ -803,31 +803,6 @@ export default function DemoPage() {
         </div>
       ) : (
         <div className="flex flex-col md:flex-row w-full md:overflow-hidden">
-          <motion.p
-            initial={{ y: -10, opacity: 0 }}
-            animate={{ y: 0, opacity: 1 }}
-            transition={{ duration: 1.25, ease: [0.23, 1, 0.32, 1] }}
-            className="absolute w-full md:w-1/2 top-0 h-[60px] flex flex-row justify-between"
-          >
-            <span className="text-sm text-[#1a2b3b] font-medium">
-              demo interview
-            </span>
-            <span className="text-sm text-[#1a2b3b] font-medium opacity-20">
-              demo interview
-            </span>
-            <span className="text-sm text-[#1a2b3b] font-medium">
-              demo interview
-            </span>
-            <span className="text-sm text-[#1a2b3b] font-medium opacity-20 hidden sm:block">
-              demo interview
-            </span>
-            <span className="text-sm text-[#1a2b3b] font-medium hidden sm:block">
-              demo interview
-            </span>
-            <span className="text-sm text-[#1a2b3b] font-medium opacity-20 hidden xl:block">
-              demo interview
-            </span>
-          </motion.p>
           <div className="w-full min-h-[60vh] md:w-1/2 md:h-screen flex flex-col px-4 pt-2 pb-8 md:px-0 md:py-2 bg-[#FCFCFC] justify-center">
             <div className="h-full w-full items-center justify-center flex flex-col">
               {step === 1 ? (
