@@ -10,7 +10,7 @@ export default async function OG() {
   const interSemiBold = await fetch(
     new URL("./fonts/Inter-SemiBold.ttf", import.meta.url)
   ).then((res) => res.arrayBuffer());
-
+// resolving
   return new ImageResponse(
     (
       <div
