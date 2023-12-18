@@ -77,13 +77,13 @@ export default function Home() {
               <Link
                 href="https://team-ger.itch.io"
                 target="_blank"
-                className="group rounded-full pl-[8px] min-w-[180px] pr-4 py-2 text-[13px] font-semibold transition-all flex items-center justify-center bg-[#1E2B3A] text-white hover:[linear-gradient(0deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)), #0D2247] no-underline flex gap-x-2  active:scale-95 scale-100 duration-75"
+                className="group rounded-full pl-[8px] min-w-[180px] pr-4 py-2 text-[13px] font-semibold transition-all flex items-center justify-center bg-[#e24aa3] text-white hover:[linear-gradient(0deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)), #0D2247] no-underline flex gap-x-2  active:scale-95 scale-100 duration-75"
                 style={{
                   boxShadow:
-                    "0px 1px 4px rgba(13, 34, 71, 0.17), inset 0px 0px 0px 1px #061530, inset 0px 0px 0px 2px rgba(255, 255, 255, 0.1)",
+                        "0px 1px 4px #eeea08, inset 0px 0px 0px 1px #eeea08, inset 0px 0px 0px 2px #eeea08"
                 }}
               >
-                <span className="w-5 h-5 rounded-full bg-[#407BBF] flex items-center justify-center">
+                <span className="w-5 h-5 rounded-full bg-[#000000] flex items-center justify-center">
                   <svg
                     className="w-[16px] h-[16px] text-white"
                     fill="none"
@@ -121,10 +121,11 @@ export default function Home() {
                 href="/demo"
                 className="group rounded-full px-4 py-2 text-[13px] font-semibold transition-all flex items-center justify-center bg-[#f5f7f9] text-[#1E2B3A] no-underline active:scale-95 scale-100 duration-75"
                 style={{
-                  boxShadow: "0 1px 1px #0c192714, 0 1px 3px #0c192724",
+                  boxShadow:
+                    "0px 1px 4px #eeea08, inset 0px 0px 0px 1px #e24aa3, inset 0px 0px 0px 2px #e24aa3 ",
                 }}
               >
-                <span className="mr-2"> Try it out </span>
+                <span className="mr-2"> About </span>
                 <svg
                   className="w-5 h-5"
                   viewBox="0 0 24 24"
@@ -133,14 +134,14 @@ export default function Home() {
                 >
                   <path
                     d="M13.75 6.75L19.25 12L13.75 17.25"
-                    stroke="#1E2B3A"
+                    stroke="#000000"
                     strokeWidth="1.5"
                     strokeLinecap="round"
                     strokeLinejoin="round"
                   />
                   <path
                     d="M19 12H4.75"
-                    stroke="#1E2B3A"
+                    stroke="#000000"
                     strokeWidth="1.5"
                     strokeLinecap="round"
                     strokeLinejoin="round"
