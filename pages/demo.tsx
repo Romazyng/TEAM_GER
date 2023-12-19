@@ -23,21 +23,21 @@ const questions = [
 
 const interviewers = [
   {
-    id: "John",
-    name: "John",
-    description: "Software Engineering",
+    id: "Eugenue",
+    name: "Eugenue",
+    description: "CEO",
     level: "L3",
   },
   {
-    id: "Richard",
-    name: "Richard",
-    description: "Product Management",
+    id: "Rafik",
+    name: "Rafik",
+    description: "Art Department",
     level: "L5",
   },
   {
-    id: "Sarah",
-    name: "Sarah",
-    description: "Other",
+    id: "Roman",
+    name: "Roman",
+    description: "Web Department",
     level: "L7",
   },
 ];
@@ -150,11 +150,11 @@ export default function DemoPage() {
       formData.append("model", "whisper-1");
 
       const question =
-        selected.name === "Behavioral"
+        selected.name === "Our team members"
           ? `Tell me about yourself. Why don${`’`}t you walk me through your resume?`
-          : selectedInterviewer.name === "John"
+          : selectedInterviewer.name === "Eugenue"
           ? "What is a Hash Table, and what is the average case and worst case time for each of its operations?"
-          : selectedInterviewer.name === "Richard"
+          : selectedInterviewer.name === "Rafik"
           ? "Uber is looking to expand its product line. Talk me through how you would approach this problem."
           : "You have a 3-gallon jug and 5-gallon jug, how do you measure out exactly 4 gallons?";
 
@@ -192,7 +192,7 @@ export default function DemoPage() {
           const prompt = `Please give feedback on the following interview question: ${question} given the following transcript: ${
             results.transcript
           }. ${
-            selected.name === "Behavioral"
+            selected.name === "Our team members"
               ? "Please also give feedback on the candidate's communication skills. Make sure their response is structured (perhaps using the STAR or PAR frameworks)."
               : "Please also give feedback on the candidate's communication skills. Make sure they accurately explain their thoughts in a coherent way. Make sure they stay on topic and relevant to the question."
           } \n\n\ Feedback on the candidate's response:`;
@@ -417,11 +417,11 @@ export default function DemoPage() {
               {recordingPermission ? (
                 <div className="w-full flex flex-col max-w-[1080px] mx-auto justify-center">
                   <h2 className="text-2xl font-semibold text-left text-[#1D2B3A] mb-2">
-                    {selected.name === "Behavioral"
+                    {selected.name === "Our team members"
                       ? `Tell me about yourself. Why don${`’`}t you walk me through your resume?`
-                      : selectedInterviewer.name === "John"
+                      : selectedInterviewer.name === "Eugenue"
                       ? "What is a Hash Table, and what is the average case and worst case time for each of its operations?"
-                      : selectedInterviewer.name === "Richard"
+                      : selectedInterviewer.name === "Rafik"
                       ? "Uber is looking to expand its product line. Talk me through how you would approach this problem."
                       : "You have a 3-gallon jug and 5-gallon jug, how do you measure out exactly 4 gallons?"}
                   </h2>
@@ -827,71 +827,7 @@ export default function DemoPage() {
                                   as="span"
                                   className="flex text-sm ml-4 mt-0 flex-col text-right items-center justify-center"
                                 >
-                                  <span className=" text-gray-500">
-                                    {question.difficulty === "Easy" ? (
-                                      <svg
-                                        className="h-full w-[16px]"
-                                        viewBox="0 0 22 25"
-                                        fill="none"
-                                        xmlns="http://www.w3.org/2000/svg"
-                                      >
-                                        <rect
-                                          y="13.1309"
-                                          width="6"
-                                          height="11"
-                                          rx="1"
-                                          fill="#4E7BBA"
-                                        />
-                                        <rect
-                                          x="8"
-                                          y="8.13086"
-                                          width="6"
-                                          height="16"
-                                          rx="1"
-                                          fill="#E1E1E1"
-                                        />
-                                        <rect
-                                          x="16"
-                                          y="0.130859"
-                                          width="6"
-                                          height="24"
-                                          rx="1"
-                                          fill="#E1E1E1"
-                                        />
-                                      </svg>
-                                    ) : (
-                                      <svg
-                                        className="h-full w-[16px]"
-                                        viewBox="0 0 22 25"
-                                        fill="none"
-                                        xmlns="http://www.w3.org/2000/svg"
-                                      >
-                                        <rect
-                                          y="13.1309"
-                                          width="6"
-                                          height="11"
-                                          rx="1"
-                                          fill="#4E7BBA"
-                                        />
-                                        <rect
-                                          x="8"
-                                          y="8.13086"
-                                          width="6"
-                                          height="16"
-                                          rx="1"
-                                          fill="#4E7BBA"
-                                        />
-                                        <rect
-                                          x="16"
-                                          y="0.130859"
-                                          width="6"
-                                          height="24"
-                                          rx="1"
-                                          fill="#E1E1E1"
-                                        />
-                                      </svg>
-                                    )}
-                                  </span>
+                                  
                                   <span className="font-medium text-gray-900">
                                     {question.difficulty}
                                   </span>
@@ -975,7 +911,7 @@ export default function DemoPage() {
                   className="max-w-lg mx-auto px-4 lg:px-0"
                 >
                   <h2 className="text-4xl font-bold text-[#1E2B3A]">
-                    And an interviewer
+                    Meet the team
                   </h2>
                   <p className="text-[14px] leading-[20px] text-[#1a2b3b] font-normal my-4">
                     Choose whoever makes you feel comfortable. You can always
@@ -1031,181 +967,10 @@ export default function DemoPage() {
                                   className="flex text-sm ml-4 mt-0 flex-col text-right items-center justify-center"
                                 >
                                   <span className=" text-gray-500">
-                                    <svg
-                                      className="w-[28px] h-full"
-                                      viewBox="0 0 38 30"
-                                      fill="none"
-                                      xmlns="http://www.w3.org/2000/svg"
-                                    >
-                                      <g filter="url(#filter0_d_34_25)">
-                                        <g clipPath="url(#clip0_34_25)">
-                                          <mask
-                                            id="mask0_34_25"
-                                            style={{ maskType: "luminance" }}
-                                            maskUnits="userSpaceOnUse"
-                                            x="3"
-                                            y="1"
-                                            width="32"
-                                            height="24"
-                                          >
-                                            <rect
-                                              x="3"
-                                              y="1"
-                                              width="32"
-                                              height="24"
-                                              fill="white"
-                                            />
-                                          </mask>
-                                          <g mask="url(#mask0_34_25)">
-                                            <path
-                                              fillRule="evenodd"
-                                              clipRule="evenodd"
-                                              d="M3 1H35V25H3V1Z"
-                                              fill="#F7FCFF"
-                                            />
-                                            <path
-                                              fillRule="evenodd"
-                                              clipRule="evenodd"
-                                              d="M3 15.6666V17.6666H35V15.6666H3Z"
-                                              fill="#E31D1C"
-                                            />
-                                            <path
-                                              fillRule="evenodd"
-                                              clipRule="evenodd"
-                                              d="M3 19.3334V21.3334H35V19.3334H3Z"
-                                              fill="#E31D1C"
-                                            />
-                                            <path
-                                              fillRule="evenodd"
-                                              clipRule="evenodd"
-                                              d="M3 8.33337V10.3334H35V8.33337H3Z"
-                                              fill="#E31D1C"
-                                            />
-                                            <path
-                                              fillRule="evenodd"
-                                              clipRule="evenodd"
-                                              d="M3 23V25H35V23H3Z"
-                                              fill="#E31D1C"
-                                            />
-                                            <path
-                                              fillRule="evenodd"
-                                              clipRule="evenodd"
-                                              d="M3 12V14H35V12H3Z"
-                                              fill="#E31D1C"
-                                            />
-                                            <path
-                                              fillRule="evenodd"
-                                              clipRule="evenodd"
-                                              d="M3 1V3H35V1H3Z"
-                                              fill="#E31D1C"
-                                            />
-                                            <path
-                                              fillRule="evenodd"
-                                              clipRule="evenodd"
-                                              d="M3 4.66663V6.66663H35V4.66663H3Z"
-                                              fill="#E31D1C"
-                                            />
-                                            <rect
-                                              x="3"
-                                              y="1"
-                                              width="20"
-                                              height="13"
-                                              fill="#2E42A5"
-                                            />
-                                            <path
-                                              fillRule="evenodd"
-                                              clipRule="evenodd"
-                                              d="M4.72221 3.93871L3.99633 4.44759L4.2414 3.54198L3.59668 2.96807H4.43877L4.7212 2.229L5.05237 2.96807H5.77022L5.20619 3.54198L5.42455 4.44759L4.72221 3.93871ZM8.72221 3.93871L7.99633 4.44759L8.2414 3.54198L7.59668 2.96807H8.43877L8.7212 2.229L9.05237 2.96807H9.77022L9.20619 3.54198L9.42455 4.44759L8.72221 3.93871ZM11.9963 4.44759L12.7222 3.93871L13.4245 4.44759L13.2062 3.54198L13.7702 2.96807H13.0524L12.7212 2.229L12.4388 2.96807H11.5967L12.2414 3.54198L11.9963 4.44759ZM16.7222 3.93871L15.9963 4.44759L16.2414 3.54198L15.5967 2.96807H16.4388L16.7212 2.229L17.0524 2.96807H17.7702L17.2062 3.54198L17.4245 4.44759L16.7222 3.93871ZM3.99633 8.44759L4.72221 7.93871L5.42455 8.44759L5.20619 7.54198L5.77022 6.96807H5.05237L4.7212 6.229L4.43877 6.96807H3.59668L4.2414 7.54198L3.99633 8.44759ZM8.72221 7.93871L7.99633 8.44759L8.2414 7.54198L7.59668 6.96807H8.43877L8.7212 6.229L9.05237 6.96807H9.77022L9.20619 7.54198L9.42455 8.44759L8.72221 7.93871ZM11.9963 8.44759L12.7222 7.93871L13.4245 8.44759L13.2062 7.54198L13.7702 6.96807H13.0524L12.7212 6.229L12.4388 6.96807H11.5967L12.2414 7.54198L11.9963 8.44759ZM16.7222 7.93871L15.9963 8.44759L16.2414 7.54198L15.5967 6.96807H16.4388L16.7212 6.229L17.0524 6.96807H17.7702L17.2062 7.54198L17.4245 8.44759L16.7222 7.93871ZM3.99633 12.4476L4.72221 11.9387L5.42455 12.4476L5.20619 11.542L5.77022 10.9681H5.05237L4.7212 10.229L4.43877 10.9681H3.59668L4.2414 11.542L3.99633 12.4476ZM8.72221 11.9387L7.99633 12.4476L8.2414 11.542L7.59668 10.9681H8.43877L8.7212 10.229L9.05237 10.9681H9.77022L9.20619 11.542L9.42455 12.4476L8.72221 11.9387ZM11.9963 12.4476L12.7222 11.9387L13.4245 12.4476L13.2062 11.542L13.7702 10.9681H13.0524L12.7212 10.229L12.4388 10.9681H11.5967L12.2414 11.542L11.9963 12.4476ZM16.7222 11.9387L15.9963 12.4476L16.2414 11.542L15.5967 10.9681H16.4388L16.7212 10.229L17.0524 10.9681H17.7702L17.2062 11.542L17.4245 12.4476L16.7222 11.9387ZM19.9963 4.44759L20.7222 3.93871L21.4245 4.44759L21.2062 3.54198L21.7702 2.96807H21.0524L20.7212 2.229L20.4388 2.96807H19.5967L20.2414 3.54198L19.9963 4.44759ZM20.7222 7.93871L19.9963 8.44759L20.2414 7.54198L19.5967 6.96807H20.4388L20.7212 6.229L21.0524 6.96807H21.7702L21.2062 7.54198L21.4245 8.44759L20.7222 7.93871ZM19.9963 12.4476L20.7222 11.9387L21.4245 12.4476L21.2062 11.542L21.7702 10.9681H21.0524L20.7212 10.229L20.4388 10.9681H19.5967L20.2414 11.542L19.9963 12.4476ZM6.72221 5.93871L5.99633 6.44759L6.2414 5.54198L5.59668 4.96807H6.43877L6.7212 4.229L7.05237 4.96807H7.77022L7.20619 5.54198L7.42455 6.44759L6.72221 5.93871ZM9.99633 6.44759L10.7222 5.93871L11.4245 6.44759L11.2062 5.54198L11.7702 4.96807H11.0524L10.7212 4.229L10.4388 4.96807H9.59668L10.2414 5.54198L9.99633 6.44759ZM14.7222 5.93871L13.9963 6.44759L14.2414 5.54198L13.5967 4.96807H14.4388L14.7212 4.229L15.0524 4.96807H15.7702L15.2062 5.54198L15.4245 6.44759L14.7222 5.93871ZM5.99633 10.4476L6.72221 9.93871L7.42455 10.4476L7.20619 9.54198L7.77022 8.96807H7.05237L6.7212 8.229L6.43877 8.96807H5.59668L6.2414 9.54198L5.99633 10.4476ZM10.7222 9.93871L9.99633 10.4476L10.2414 9.54198L9.59668 8.96807H10.4388L10.7212 8.229L11.0524 8.96807H11.7702L11.2062 9.54198L11.4245 10.4476L10.7222 9.93871ZM13.9963 10.4476L14.7222 9.93871L15.4245 10.4476L15.2062 9.54198L15.7702 8.96807H15.0524L14.7212 8.229L14.4388 8.96807H13.5967L14.2414 9.54198L13.9963 10.4476ZM18.7222 5.93871L17.9963 6.44759L18.2414 5.54198L17.5967 4.96807H18.4388L18.7212 4.229L19.0524 4.96807H19.7702L19.2062 5.54198L19.4245 6.44759L18.7222 5.93871ZM17.9963 10.4476L18.7222 9.93871L19.4245 10.4476L19.2062 9.54198L19.7702 8.96807H19.0524L18.7212 8.229L18.4388 8.96807H17.5967L18.2414 9.54198L17.9963 10.4476Z"
-                                              fill="#F7FCFF"
-                                            />
-                                          </g>
-                                          <rect
-                                            x="3"
-                                            y="1"
-                                            width="32"
-                                            height="24"
-                                            fill="url(#paint0_linear_34_25)"
-                                            style={{ mixBlendMode: "overlay" }}
-                                          />
-                                        </g>
-                                        <rect
-                                          x="3.5"
-                                          y="1.5"
-                                          width="31"
-                                          height="23"
-                                          rx="1.5"
-                                          stroke="black"
-                                          strokeOpacity="0.1"
-                                          style={{ mixBlendMode: "multiply" }}
-                                        />
-                                      </g>
-                                      <defs>
-                                        <filter
-                                          id="filter0_d_34_25"
-                                          x="0"
-                                          y="0"
-                                          width="38"
-                                          height="30"
-                                          filterUnits="userSpaceOnUse"
-                                          colorInterpolationFilters="sRGB"
-                                        >
-                                          <feFlood
-                                            floodOpacity="0"
-                                            result="BackgroundImageFix"
-                                          />
-                                          <feColorMatrix
-                                            in="SourceAlpha"
-                                            type="matrix"
-                                            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-                                            result="hardAlpha"
-                                          />
-                                          <feOffset dy="2" />
-                                          <feGaussianBlur stdDeviation="1.5" />
-                                          <feColorMatrix
-                                            type="matrix"
-                                            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0"
-                                          />
-                                          <feBlend
-                                            mode="normal"
-                                            in2="BackgroundImageFix"
-                                            result="effect1_dropShadow_34_25"
-                                          />
-                                          <feBlend
-                                            mode="normal"
-                                            in="SourceGraphic"
-                                            in2="effect1_dropShadow_34_25"
-                                            result="shape"
-                                          />
-                                        </filter>
-                                        <linearGradient
-                                          id="paint0_linear_34_25"
-                                          x1="19"
-                                          y1="1"
-                                          x2="19"
-                                          y2="25"
-                                          gradientUnits="userSpaceOnUse"
-                                        >
-                                          <stop
-                                            stopColor="white"
-                                            stopOpacity="0.7"
-                                          />
-                                          <stop offset="1" stopOpacity="0.3" />
-                                        </linearGradient>
-                                        <clipPath id="clip0_34_25">
-                                          <rect
-                                            x="3"
-                                            y="1"
-                                            width="32"
-                                            height="24"
-                                            rx="2"
-                                            fill="white"
-                                          />
-                                        </clipPath>
-                                      </defs>
-                                    </svg>
+                                    
                                   </span>
                                   <span className="font-medium text-gray-900">
-                                    EN
+                                   
                                   </span>
                                 </RadioGroup.Description>
                                 <span
@@ -1587,17 +1352,17 @@ export default function DemoPage() {
                       key={selected.id}
                       className="text-[#1a2b3b] text-[14px] leading-[18px] font-semibold absolute"
                     >
-                      {selected.name === "Behavioral"
-                        ? "Tell me about yourself"
-                        : selectedInterviewer.name === "John"
-                        ? "What is a Hash Table, and what is the average case for each of its operations?"
-                        : selectedInterviewer.name === "Richard"
-                        ? "Uber is looking to expand its product line. How would you go about doing this?"
-                        : "You have a 3-gallon jug and 5-gallon jug, how do you measure out exactly 4 gallons?"}
+                      {selected.name === "Our team members"
+                        ? "111"
+                        : selectedInterviewer.name === "Eugenue"
+                        ? "222"
+                        : selectedInterviewer.name === "Rafik"
+                        ? "333"
+                        : "444"}
                     </motion.span>
 
                     <ul className="mt-[28px] flex">
-                      {selected.name === "Behavioral" ? (
+                      {selected.name === "Our team members" ? (
                         <li className="list-none max-w-[400px]">
                           Start off by walking me through your resume. Perhaps
                           begin with your internships in college and move to
@@ -1605,9 +1370,7 @@ export default function DemoPage() {
                         </li>
                       ) : (
                         <li className="list-none max-w-[400px]">
-                          Start off by explaining what the function does, and
-                          its time and space complexities. Then go into how you
-                          would optimize it.
+                          
                         </li>
                       )}
                     </ul>
@@ -1621,7 +1384,7 @@ export default function DemoPage() {
                     transition={{ duration: 0.5, ease: [0.23, 1, 0.32, 1] }}
                     className="mt-[12px] flex bg-gray-100 h-[80%] rounded-lg relative ring-1 ring-gray-900/5 shadow-md"
                   >
-                    {selectedInterviewer.name === "John" ? (
+                    {selectedInterviewer.name === "Eugenue" ? (
                       <motion.img
                         initial={{ opacity: 0, y: 10 }}
                         animate={{ opacity: 1, y: 0 }}
@@ -1680,7 +1443,7 @@ export default function DemoPage() {
                   </ul>
                 )}
                 {step === 1 &&
-                  (selected.name === "Behavioral" ? (
+                  (selected.name === "Our team members" ? (
                     <motion.ul
                       initial={{ opacity: 0, y: 10 }}
                       animate={{ opacity: 1, y: 0 }}
