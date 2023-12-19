@@ -119,13 +119,13 @@ export default function Home() {
             >
               <Link
                 href="/demo"
-                className="group rounded-full px-4 py-2 text-[13px] font-semibold transition-all flex items-center justify-center bg-[#f5f7f9] text-[#1E2B3A] no-underline active:scale-95 scale-100 duration-75"
+                className="group rounded-full px-4 py-2 text-[13px] font-semibold transition-all flex items-center justify-center bg-[#eeea08] text-[#000000] no-underline active:scale-95 scale-100 duration-75"
                 style={{
                   boxShadow:
                     "0px 1px 4px #eeea08, inset 0px 0px 0px 1px #e24aa3, inset 0px 0px 0px 2px #e24aa3 ",
                 }}
               >
-                <span className="mr-2"> About </span>
+                <span className="mr-2"> About us </span>
                 <svg
                   className="w-5 h-5"
                   viewBox="0 0 24 24"
@@ -135,14 +135,14 @@ export default function Home() {
                   <path
                     d="M13.75 6.75L19.25 12L13.75 17.25"
                     stroke="#000000"
-                    strokeWidth="1.5"
+                    strokeWidth="1.75"
                     strokeLinecap="round"
                     strokeLinejoin="round"
                   />
                   <path
                     d="M19 12H4.75"
                     stroke="#000000"
-                    strokeWidth="1.5"
+                    strokeWidth="1.75"
                     strokeLinecap="round"
                     strokeLinejoin="round"
                   />

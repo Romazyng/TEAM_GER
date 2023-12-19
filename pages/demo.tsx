@@ -9,15 +9,15 @@ import { createFFmpeg, fetchFile } from "@ffmpeg/ffmpeg";
 const questions = [
   {
     id: 1,
-    name: "Behavioral",
-    description: "From LinkedIn, Amazon, Adobe",
-    difficulty: "Easy",
+    name: "Our team members",
+    description: "The core team members who contribute the most.",
+    difficulty: "TEAM GER",
   },
   {
     id: 2,
-    name: "Technical",
-    description: "From Google, Meta, and Apple",
-    difficulty: "Medium",
+    name: "Our projects.",
+    description: "!!!!!!!!!!",
+    difficulty: "TEAM GER",
   },
 ];
 
