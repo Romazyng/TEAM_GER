@@ -81,49 +81,6 @@ export default function DemoPage() {
   useEffect(() => {
     setIsDesktop(window.innerWidth >= 768);
   }, []);
-
-  useEffect(() => {
-    if (videoEnded) {
-      const element = document.getElementById("startTimer");
-
-      if (element) {
-        element.style.display = "flex";
-      }
-
-      setCapturing(true);
-      setIsVisible(false);
-
-      mediaRecorderRef.current = new MediaRecorder(
-        webcamRef?.current?.stream as MediaStream
-      );
-      mediaRecorderRef.current.addEventListener(
-        "dataavailable",
-        handleDataAvailable
-      );
-      mediaRecorderRef.current.start();
-    }
-  }, [videoEnded, webcamRef, setCapturing, mediaRecorderRef]);
-
-  const handleStartCaptureClick = useCallback(() => {
-    const startTimer = document.getElementById("startTimer");
-    if (startTimer) {
-      startTimer.style.display = "none";
-    }
-
-    if (vidRef.current) {
-      vidRef.current.play();
-    }
-  }, [webcamRef, setCapturing, mediaRecorderRef]);
-
-  const handleDataAvailable = useCallback(
-    ({ data }: BlobEvent) => {
-      if (data.size > 0) {
-        setRecordedChunks((prev) => prev.concat(data));
-      }
-    },
-    [setRecordedChunks]
-  );
-
   const handleStopCaptureClick = useCallback(() => {
     if (mediaRecorderRef.current) {
       mediaRecorderRef.current.stop();
@@ -1350,7 +1307,7 @@ export default function DemoPage() {
               ></rect>
             </svg>
             <figure
-              className="absolute md:top-1/2 ml-[-380px] md:ml-[0px] md:-mt-[240px] left-1/2 grid transform scale-[0.5] sm:scale-[0.6] md:scale-[130%] w-[760px] h-[540px] bg-[#f5f7f9] text-[9px] origin-[50%_15%] md:origin-[50%_25%] rounded-[15px] overflow-hidden p-2 z-20"
+              className="absolute md:top-1/2 ml-[-380px] md:ml-[0px] md:-mt-[240px] left-20 grid transform md:scale-[110%] w-[800px] h-[540px] bg-[#f5f7f9] text-[9px] origin-[50%_15%] md:origin-[50%_25%] rounded-[15px] overflow-hidden p-2 z-20"
               style={{
                 grid: "100%/repeat(1,calc(5px * 28)) 1fr",
                 boxShadow:
